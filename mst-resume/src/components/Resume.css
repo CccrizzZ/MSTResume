@@ -1,6 +1,7 @@
 
 body{
     background-color: #0d1117;
+
 }
 
 i {
@@ -9,12 +10,14 @@ i {
 
 #resume{
     padding: 50px;
+    width: max-content;
     height: max-content;
     max-width: 60vw;
-    min-width: 800px;
+    /* min-width: 500px; */
     margin: auto;
     background-color: #251D3A;
     color: #fff;
+    border-radius: 25px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -36,22 +39,22 @@ p, li{
 
 @font-face {
     font-family: cormorant-medium;
-    src: url(./ttf/Cormorant-Medium.otf);
+    src: url(../ttf/Cormorant-Medium.otf);
 }
 
 @font-face {
     font-family: archivo-bold;
-    src: url(./ttf/Archivo-Bold.ttf);
+    src: url(../ttf/Archivo-Bold.ttf);
 }
 
 @font-face {
     font-family: archivo-italic;
-    src: url(./ttf/Archivo-Italic.ttf);
+    src: url(../ttf/Archivo-Italic.ttf);
 }
 
 @font-face {
     font-family: archivo-regular;
-    src: url(./ttf/Archivo-Regular.ttf);
+    src: url(../ttf/Archivo-Regular.ttf);
 }
 
 
@@ -63,6 +66,7 @@ p, li{
 .backglow {
     box-shadow:
     0 0 60px 30px rgb(98, 81, 255),  /* inner white */
-    0 0 100px 60px rgb(111, 0, 255), /* middle magenta */
-    0 0 140px 90px rgb(183, 0, 255); /* outer cyan */
+    0 0 100px 60px rgb(132, 0, 255), /* middle magenta */
+    0 0 10000px 10000px rgb(0, 0, 0); /* outer cyan */
+
 }
