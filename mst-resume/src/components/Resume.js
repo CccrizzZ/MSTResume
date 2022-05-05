@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import avatar from '../asset/avatar.jpg'
 import './Resume.css'
 import {
-    Button,
+    Fade,
     Container,
     Row,
     Col,
@@ -14,7 +14,6 @@ import {
     Linkedin,
     TelephoneFill,
     EnvelopeFill
-
 } from 'react-bootstrap-icons';
 import Experience from './Experience'
 import Education from './Education'
@@ -54,7 +53,12 @@ export default class Resume extends Component {
                 break;
                 
             case "experience":
-                return(<Experience/>)
+                return(
+                    <Fade in={true}>
+                        <Experience/>
+
+                    </Fade>
+                )
             case "education":
                 return(<Education/>)
             default:
@@ -69,7 +73,7 @@ export default class Resume extends Component {
             <Container style={{ marginTop: "20px" }}>
                 <Row>
                     <Col sm={4} md={4} lg={4}>
-                        <img alt="avatar" style={{ maxWidth: "250px", right: "0px", borderRadius: "25px", border: "2px solid #333" }} src={avatar} />
+                        <img alt="avatar" id="avatar" src={avatar} />
 
 
                     </Col>
@@ -79,7 +83,7 @@ export default class Resume extends Component {
 
                         <p id="resume_italic"><TelephoneFill/> (+39) 348-382-7352</p>
                         <p id="resume_italic"><EnvelopeFill/> mengsitong4@gmail.com</p>
-                        <Linkedin/> <a style={{ color: "#fff" }} href="http://linkedin.com/in/sitong-meng-3aa332207">http://linkedin.com/in/sitong-meng-3aa332207</a>
+                        <Linkedin/> <a style={{ color: "#fff", fontSize: "12px" }} href="http://linkedin.com/in/sitong-meng-3aa332207">http://linkedin.com/in/sitong-meng-3aa332207</a>
                         
                         
                         <hr />
@@ -99,17 +103,21 @@ export default class Resume extends Component {
                     </Col>
                 </Row>
 
-                <Row style={{ marginTop: "40px", marginLeft: "0px" }} >
+                <Row style={{ marginTop: "40px", paddingLeft: "0px" }} >
                     <Col sm={4} md={4} lg={4}>
 
                     </Col>
                     <Col sm={8} md={8} lg={8}>
-                        <h3>Language</h3>
-                        <ul>
-                            <li>English (Advanced)</li>
-                            <li>Chinese (Native)</li>
-                            <li>Cantonese (Native)</li>
-                        </ul>
+                        <h2>Language</h2>
+                        <div>
+                            <p id="resume_italic">
+                                - English (Advanced)
+                                <br/>
+                                - Chinese (Native)
+                                <br/>
+                                - Cantonese (Native)
+                            </p>
+                        </div>
                     </Col>
                 </Row>
             </Container>
@@ -122,14 +130,14 @@ export default class Resume extends Component {
     render() {
         return (
             <>
-                <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-                    <Container>
+                <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
+                    <Container className="nav-container">
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav style={{ margin: "auto" }} className="me-auto">
                                 <Nav.Link onClick={()=>{this.GotoPage("home")}}>Home</Nav.Link>
                                 <Nav.Link onClick={()=>{this.GotoPage("projects")}}>Projects</Nav.Link>
-                                <NavDropdown title="Personal Bio" id="collasible-nav-dropdown">
+                                <NavDropdown title="Personal Bio" id="collasible-nav-dropdown" menuVariant="dark">
                                     <NavDropdown.Item onClick={()=>{this.GotoPage("experience")}}>Work Experience</NavDropdown.Item>
                                     <NavDropdown.Item onClick={()=>{this.GotoPage("education")}}>Education</NavDropdown.Item>
                                     <NavDropdown.Divider />
@@ -144,6 +152,7 @@ export default class Resume extends Component {
                 <div id="resume" className="backglow" style={{ marginTop: "12vh" }}>
                     {this.RenderApp()}
                 </div>
+
             </>
         )
     }

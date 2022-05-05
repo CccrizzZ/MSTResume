@@ -11,9 +11,6 @@ export default class SkillsHobbies extends Component {
 
     render() {
         return (
-
-
-
             <div class="container" id="resume-cards" style={{ marginTop: "40px" }}>
                 <div class="row" style={{ marginBottom: "20px" }}>
                     <div class="col-4" style={{ paddingLeft: "40px" }}>

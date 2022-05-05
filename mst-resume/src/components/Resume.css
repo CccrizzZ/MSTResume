@@ -8,34 +8,82 @@ i {
     margin-right: 10px;
 }
 
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: playfair-regular;
+}
+
+p, li, strong{
+    font-family: playfair-regular;
+}
+
+.nav-container > * {
+    font-family: gidugu-regular;
+    font-size: 22px;
+}
+
+
+.dropdown-menu > a {
+    font-family: gidugu-regular;
+    font-size: 18px;
+}
+
+
+
+#avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    max-width: 250px;  
+    border-radius: 25px;
+    border: 2px solid #333;
+    width: -webkit-fill-available;
+}
+
+
+
 #resume{
-    padding: 50px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
     width: max-content;
     height: max-content;
     max-width: 60vw;
-    /* min-width: 500px; */
+    min-width: 55vw;
     margin: auto;
     background-color: #251D3A;
     color: #fff;
     border-radius: 25px;
+    margin-bottom: 40px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: archivo-bold;
-}
-
-p, li{
-    font-family: archivo-regular;
-}
-
-
-
-#resume-cards{
+#resume-cards {
     background-color: #2A2550; 
     padding: 20px; 
     border-radius: 25px;
 }
 
+#resume_italic {
+    font-family: archivo-italic;
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: gidugu-regular;
+    src: url(../ttf/Gidugu-Regular.ttf);
+}
+
+@font-face {
+    font-family: playfair-italic;
+    src: url(../ttf/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: playfair-regular;
+    src: url(../ttf/PlayfairDisplay-VariableFont_wght.ttf);
+}
 
 @font-face {
     font-family: cormorant-medium;
@@ -57,10 +105,6 @@ p, li{
     src: url(../ttf/Archivo-Regular.ttf);
 }
 
-
-#resume_italic {
-    font-family: archivo-italic;
-}
 
 
 .backglow {

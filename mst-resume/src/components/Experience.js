@@ -1,29 +1,47 @@
 import React, { Component } from 'react'
+import {
+    Fade,
+    Container,
+    Row,
+    Col,
+    Navbar,
+    Nav,
+    NavDropdown
+} from 'react-bootstrap'
+import './Resume.css'
+import './Experience.css'
+
+
+
 
 export default class Experience extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            
+
         }
     }
 
-    
+
     render() {
         return (
-            <div className="container" id="resume-cards" style={{ marginTop: "40px" }}>
-                <h2>Work Experience</h2>
+            <Container style={{ marginTop: "20px" }}>
+                <Row>
+                    <Col sm={12} md={12} lg={12} style={{ display: "flex"}}>
+                        <h2 style={{margin: "auto", marginBottom: "20px"}}>Work Experience</h2>
+                    </Col>
+                </Row>
 
-                <div className="row" style={{ marginBottom: "40px" }}>
-                    <div className="col-4" style={{ paddingLeft: "40px" }}>
+                <Row id="custom-row">
+                    <Col sm={4} md={4} lg={4}>
                         <h5>October 2021 - April 2022</h5>
-                        <h6>Xariss Luxury Experience</h6>
-                        <h6>Florence, Italy</h6>
-                    </div>
-                    <div className="col-8">
+                        <p>Xariss Luxury Experience</p>
+                        <p>Florence, Italy</p>
+                    </Col>
+                    <Col sm={8} md={8} lg={8}>
                         <h2>Social Media Marketing Intern</h2>
-                        <hr style={{ width: "80%" }} />
+                        <hr />
                         <ul>
                             <li>
                                 Strategic program development and implementation of Chinese Market using
@@ -43,18 +61,17 @@ export default class Experience extends Component {
                                 Participated in event planning and successfully held two online events in Italy.
                             </li>
                         </ul>
-                    </div>
-                </div>
-
-                <div className="row" style={{ marginBottom: "20px" }}>
-                    <div className="col-4" style={{ paddingLeft: "40px" }}>
+                    </Col>
+                </Row>
+                <Row id="custom-row">
+                    <Col sm={4} md={4} lg={4}>
                         <h5>March 2020 - May 2021</h5>
-                        <h6>Chinese Universe Co.,Ltd</h6>
-                        <h6>Beijing, China</h6>
-                    </div>
-                    <div className="col-8">
+                        <p>Chinese Universe Co.,Ltd</p>
+                        <p>Beijing, China</p>
+                    </Col>
+                    <Col sm={8} md={8} lg={8}>
                         <h2>Co-Founder & Operating Director</h2>
-                        <hr style={{ width: "80%" }} />
+                        <hr/>
                         <ul>
                             <li>
                                 Operated Chinese social platforms (WeChat, Douyin, Weibo) and acquired 100k
@@ -70,18 +87,17 @@ export default class Experience extends Component {
                                 obtained investment from Chinese government.
                             </li>
                         </ul>
-                    </div>
-                </div>
-
-                <div className="row" style={{ marginBottom: "20px" }}>
-                    <div className="col-4" style={{ paddingLeft: "40px" }}>
+                    </Col>
+                </Row>
+                <Row id="custom-row">
+                    <Col sm={4} md={4} lg={4}>
                         <h5>December 2018 - September 2019</h5>
-                        <h6>Breitling Flagship Boutique</h6>
-                        <h6>Beijing, China</h6>
-                    </div>
-                    <div className="col-8">
+                        <p>Breitling Flagship Boutique</p>
+                        <p>Beijing, China</p>
+                    </Col>
+                    <Col sm={8} md={8} lg={8}>
                         <h2>Flagship Senior Sales</h2>
-                        <hr style={{ width: "80%" }} />
+                        <hr />
                         <ul>
                             <li>
                                 Provided excellent customer service and helped customers to purchase
@@ -99,18 +115,17 @@ export default class Experience extends Component {
                                 information in Salesforce CRM.
                             </li>
                         </ul>
-                    </div>
-                </div>
-
-                <div className="row" style={{ marginBottom: "20px" }}>
-                    <div className="col-4" style={{ paddingLeft: "40px" }}>
+                    </Col>
+                </Row>
+                <Row id="custom-row">
+                    <Col sm={4} md={4} lg={4}>
                         <h5>June 2015 - September 2018</h5>
-                        <h6>Yiqin Trading Co.,Ltd</h6>
-                        <h6>Shenzhen, China</h6>
-                    </div>
-                    <div className="col-8">
+                        <p>Yiqin Trading Co.,Ltd</p>
+                        <p>Shenzhen, China</p>
+                    </Col>
+                    <Col sm={8} md={8} lg={8}>
                         <h2>Founder/Manager of E-Sales, Marketing and Customer Service</h2>
-                        <hr style={{ width: "80%" }} />
+                        <hr />
                         <ul>
                             <li>
                                 Conceived and developed an e-commerce resale wall decor store.
@@ -134,9 +149,9 @@ export default class Experience extends Component {
                                 online business, increasing sales revenue by 54%.
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         )
     }
 }
