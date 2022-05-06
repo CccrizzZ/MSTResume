@@ -45,7 +45,7 @@ export default class Experience extends Component {
                         <ul>
                             <li>
                                 Strategic program development and implementation of Chinese Market using
-                                social media Little Red Book(Xiaohongshu), including created content,
+                                social media Little Red Book (Xiaohongshu), including created content,
                                 promoted campaigns, negotiated with KOC and interacted with audiences.
                             </li>
                             <li>
