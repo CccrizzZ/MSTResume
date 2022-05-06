@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MSTResume/static/css/main.0eec5718.css",
+    "main.js": "/MSTResume/static/js/main.254403bb.js",
+    "static/js/787.fa0a986e.chunk.js": "/MSTResume/static/js/787.fa0a986e.chunk.js",
+    "static/media/avatar.jpg": "/MSTResume/static/media/avatar.b66b77c43c49d5c22bbf.jpg",
+    "static/media/Gidugu-Regular.ttf": "/MSTResume/static/media/Gidugu-Regular.ff30ac537a03c88f3b2c.ttf",
+    "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/MSTResume/static/media/PlayfairDisplay-VariableFont_wght.54971b7248ded7d0d614.ttf",
+    "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/MSTResume/static/media/PlayfairDisplay-Italic-VariableFont_wght.2d297421b9c99741bf1c.ttf",
+    "static/media/Cormorant-Medium.otf": "/MSTResume/static/media/Cormorant-Medium.cfb79ed49ccf7912a2c6.otf",
+    "static/media/Archivo-Bold.ttf": "/MSTResume/static/media/Archivo-Bold.aa2b11844ae9503b698b.ttf",
+    "static/media/Archivo-Italic.ttf": "/MSTResume/static/media/Archivo-Italic.7e08e7cf39cfeee67806.ttf",
+    "static/media/Archivo-Regular.ttf": "/MSTResume/static/media/Archivo-Regular.966d9d4d45a09d520c4f.ttf",
+    "index.html": "/MSTResume/index.html",
+    "main.0eec5718.css.map": "/MSTResume/static/css/main.0eec5718.css.map",
+    "main.254403bb.js.map": "/MSTResume/static/js/main.254403bb.js.map",
+    "787.fa0a986e.chunk.js.map": "/MSTResume/static/js/787.fa0a986e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0eec5718.css",
+    "static/js/main.254403bb.js"
+  ]
+}
