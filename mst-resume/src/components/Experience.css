@@ -5,3 +5,12 @@
     margin-bottom: 40px;
     padding: 20px;
 }
+
+#project-row{
+    text-align: center;
+}
+
+#project-img{
+    width: 90%;
+    max-width: 500px;
+}

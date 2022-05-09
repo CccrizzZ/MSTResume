@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import avatar from '../asset/avatar.jpg'
 import './Resume.css'
 import {
-    Fade,
     Container,
     Row,
     Col,
@@ -17,7 +16,7 @@ import {
 } from 'react-bootstrap-icons';
 import Experience from './Experience'
 import Education from './Education'
-
+import Projects from './Projects';
 
 
 export default class Resume extends Component {
@@ -46,19 +45,12 @@ export default class Resume extends Component {
                 console.log("home")
                 return (this.RenderHome())
             case "projects":
-                console.log("projects")
-                
-                break;
+                return(<Projects/>)
             case "websites":
                 break;
                 
             case "experience":
-                return(
-                    <Fade in={true}>
-                        <Experience/>
-
-                    </Fade>
-                )
+                return(<Experience/>)
             case "education":
                 return(<Education/>)
             default:
